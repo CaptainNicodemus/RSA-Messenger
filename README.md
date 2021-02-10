@@ -27,7 +27,7 @@ Team Members: Nicodemus Robles, Trey Tolleson, Mand Renae Palencia, Roman Iles
 ### Features
 * Sprint 1: Encryption Algorithm
 	1. To begin our project, we will need to create an Ecryption Algorithm for simple messages.
-	2. As a message app user, we would like an RSA mssenger with a strong encryption sequence.
+	2. As a message app user, we would like an RSA messenger with a strong encryption sequence.
 
 ### Contribution guidelines ###
 
