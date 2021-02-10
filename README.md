@@ -1,11 +1,9 @@
 # README #
 ![Vulcans](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/raw/f2a24a61ad7417fcd74bb6e41cebae848de5263d/Readme%20images/Logo_White.png)
 
-<<<<<<< HEAD
-=======
 
 Team Members: Nicodemus Robles, Trey Tolleson, Mand Renae Palencia, Roman Iles
->>>>>>> hotfix
+
 
 This README would normally document whatever steps are necessary to get your application up and running.
 ### What is this repository for? ###
