@@ -2,11 +2,16 @@
 # RSA Messenger - Read me
 
 ## Table of contents
+
 * [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
 * [Technologies](#technologies)
 * [Features](#features)
+
+
+
+
+* [Screenshots](#screenshots)
+* [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
@@ -28,6 +33,40 @@
 
 * A lot of people don't understand how to encrypt their data, with this tool, we are trying to make it easy and secure
 
+## Technologies
+
+**RSA Encryption** :  is a public-key cryptosystem that is widely used for secure data transmission. An RSA user creates and publishes a public key based on two large prime numbers, along with an auxiliary value. The prime numbers are kept secret. Messages can be encrypted by anyone, via the public key, but can only be decoded by someone who knows the prime numbers.
+
+​	Here are some RSA links		
+
+				- [RSA Basics](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+				- [Youtube Explains RSA](https://www.youtube.com/watch?v=wXB-V_Keiu8)
+
+## Features
+
+- **Features:** What will be the initial features in this first sprint.
+
+- - **Give each feature a name.**
+  - **Describe what it does and who or what uses it.**
+  - **What user stories correspond to this feature.**
+
+* Sprint 1: Encryption Algorithm
+  1. To begin our project, we will need to create an Ecryption Algorithm for simple messages.
+  2. As a message app user, we would like an RSA messenger with a strong encryption sequence.
+
+
+
+To-do list:
+
+- Add padding to RSA
+- Make mobile app
+
+
+
+
+
+
+
 ## Screenshots
 
 none yet
@@ -40,28 +79,6 @@ none yet
 * Database configuration
 * How to run tests
 * Deployment instructions
-
-## Technologies
-* **Technologies (5 pts)**: : List the technologies you will be using. If you can hyperlink them to webpages describing the technologies that is a plus.
-* [RSA Basics](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
-* [Youtube Explains RSA](https://www.youtube.com/watch?v=wXB-V_Keiu8)
-
-## Features
-
-- **Features (25 pts):** What will be the initial features in this first sprint.
-
-- - **Give each feature a name.**
-  - **Describe what it does and who or what uses it.**
-  - **What user stories correspond to this feature.**
-
-* Sprint 1: Encryption Algorithm
-	1. To begin our project, we will need to create an Ecryption Algorithm for simple messages.
-	2. As a message app user, we would like an RSA messenger with a strong encryption sequence.
-
-To-do list:
-
-- Wow improvement to be done 1
-- Wow improvement to be done 2
 
 ## Status
 Project is: _in progress_
