@@ -5,7 +5,6 @@
 Team Members: Nicodemus Robles, Trey Tolleson, Mand Renae Palencia, Roman Iles
 
 
-This README would normally document whatever steps are necessary to get your application up and running.
 ### What is this repository for? ###
 
 * Team Vulcan is creating a RSA Encryption Manager as a simple solution for secure private messaging accessible for everyone.
