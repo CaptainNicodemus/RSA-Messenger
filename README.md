@@ -1,5 +1,5 @@
 # README #
-![Vulcans](Readme images/Logo_White.png)
+![Vulcans](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/raw/f2a24a61ad7417fcd74bb6e41cebae848de5263d/Readme%20images/Logo_White.png)
 
 
 This README would normally document whatever steps are necessary to get your application up and running.
