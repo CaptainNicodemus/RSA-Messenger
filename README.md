@@ -76,26 +76,22 @@ I also added some RSA documents for reference.
 ​	**Trey Tolleson**
 
 ​		Sprint 1 data base: [vertabelo](https://my.vertabelo.com/public-model-view/Zf7pHePlY5ezN1TGpDdgoPh01FjFGnjADZO8yimuoBF2M0fmjokpquRsEuDpIsFb?x=1883&y=2162&zoom=0.4632)
-		- Database model for messaging between users within application. Can be converted to query language to be used in chosen DBM
+​		- Database model for messaging between users within application. Can be converted to query language to be used in chosen DBM
 
 ​	**Mandi Renae Palencia** 
-		
+​		
 		Sprint 1 chat: I've made a simple chatroom app that use scoket programming in python to connect a server and client. Mulitple users can join as long as they have the same host and port.
 		-We plan on creating a desktop application with this simple base.
-​
+
+
 ​	**Roman Iles**
-<<<<<<< HEAD
-    
-Prime generation:  
-=======
+
 ​    Prime generation: 
 ​      implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
->>>>>>> Nico_dev
+​        
 
-implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
-        
 - The base RSA algorithm operates with prime numbers, which will us erandomly generated prime numbers. Because this process is best done with algorithms that only "probably" generate prime numbers, we have primality tests to validate.
-          
+  
 - Next up would be feeding this primality test (it has its flaws) into some other primality tests to up the validation. I would also work on a prime-number generator. There are several proven generators that have high probabilities of generating primes, but validation is still important.
 
 
