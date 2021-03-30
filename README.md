@@ -79,8 +79,9 @@ I also added some RSA documents for reference.
 		- Database model for messaging between users within application. Can be converted to query language to be used in chosen DBM
 
 ​	**Mandi Renae Palencia** 
-
-
+		
+		Sprint 1 chat: I've made a simple chatroom app that use scoket programming in python to connect a server and client. Mulitple users can join as long as they have the same host and port.
+		-We plan on creating a desktop application with this simple base.
 ​
 ​	**Roman Iles**
     
