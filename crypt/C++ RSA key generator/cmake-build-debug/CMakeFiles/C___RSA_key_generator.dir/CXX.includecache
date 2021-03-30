@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/nicod/Documents/School/Programming/Software Eng/RSA messenger/crypt/C++ RSA key generator/main.cpp
+iostream
+-
+math.h
+-
+string
+-
+
