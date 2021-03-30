@@ -81,7 +81,7 @@ I also added some RSA documents for reference.
 ​	**Mandi Renae Palencia** 
 		
 		Sprint 1 chat: I've made a simple chatroom app that use scoket programming in python to connect a server and client. Mulitple users can join as long as they have the same host and port.
-		-We plan on creating a desktop application with this simple base.
+		We plan on creating a desktop application with this simple base. Next steps: Integrate RSA with chat application and use Universal Windows Platform to create an official desktop application.
 ​
 ​	**Roman Iles**
     
