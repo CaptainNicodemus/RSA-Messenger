@@ -76,6 +76,7 @@ I also added some RSA documents for reference.
 ​	**Trey Tolleson**
 
 ​		Sprint 1 data base: [vertabelo](https://my.vertabelo.com/public-model-view/Zf7pHePlY5ezN1TGpDdgoPh01FjFGnjADZO8yimuoBF2M0fmjokpquRsEuDpIsFb?x=1883&y=2162&zoom=0.4632)
+		Database model for messaging between users within application. Can be converted to query language to be used in chosen DBM
 
 ​	**Mandi Renae Palencia** 
 
