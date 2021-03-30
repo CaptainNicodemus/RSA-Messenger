@@ -8,18 +8,14 @@
 * [Features](#features)
 
 
-
-
-* [Screenshots](#screenshots)
+* [Updates](#updates)
 * [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
 ## General info
-1. Who you’re working with (you and your team members)?
-
-> Team Members: Nicodemus Robles, Trey Tolleson, Mandi Renae Palencia, Roman Iles
+Team Members: Nicodemus Robles, Trey Tolleson, Mandi Renae Palencia, Roman Iles
 
 2. What you’re creating?
 
@@ -41,7 +37,7 @@
 
 				- [RSA Basics](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 				- [Youtube Explains RSA](https://www.youtube.com/watch?v=wXB-V_Keiu8)
-  
+
   Information on prime number generation and primality testing:
         - [Generation of primes](https://en.wikipedia.org/wiki/Generation_of_primes)
         - [Fermat primality test](https://en.wikipedia.org/wiki/Primality_test#Fermat_primality_test)
@@ -65,17 +61,31 @@
 To-do list:
 
 - Add padding to RSA
-- Make mobile app
+- Make desktop app
+
+
+
+## Updates
+
+### Sprint 1
+
+​	**Nicodemus Robles** 
+
+
+
+​	**Trey Tolleson**
+
+​		Sprint 1 data base: [vertabelo](https://my.vertabelo.com/public-model-view/Zf7pHePlY5ezN1TGpDdgoPh01FjFGnjADZO8yimuoBF2M0fmjokpquRsEuDpIsFb?x=1883&y=2162&zoom=0.4632)
+
+​	**Mandi Renae Palencia** 
+
+
+
+​	**Roman Iles**
 
 
 
 
-
-
-
-## Screenshots
-
-none yet
 
 ## Setup
 
@@ -95,6 +105,3 @@ Add here credits. Project inspired by..., based on...
 ## Contact 
 * Repo owner or admin
 * Other community or team contact
-
-## Trey Sprint 1 Database
-* https://my.vertabelo.com/public-model-view/Zf7pHePlY5ezN1TGpDdgoPh01FjFGnjADZO8yimuoBF2M0fmjokpquRsEuDpIsFb?x=1883&y=2162&zoom=0.4632
