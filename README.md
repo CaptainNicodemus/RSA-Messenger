@@ -63,11 +63,15 @@ To-do list:
 
 ## Updates
 
-### Sprint 1
+### Sprint 1 - v0.01
 
 ​	**Nicodemus Robles** 
 
+C++ RSA encryptor and decryptor - ./crypt
 
+- This sprint I added  a C++ RSA encryptor and decryptor. In its current state, the program can only encrypt/decrypt hard coded int's and the key's aren't strong . 
+
+I also added some RSA documents for reference.
 
 ​	**Trey Tolleson**
 

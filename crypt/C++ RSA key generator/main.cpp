@@ -38,7 +38,7 @@ int main() {
    //choosing d such that it satisfies d*e = 1 mod phi
    double d1=1/e;
    double d=fmod(d1,phi);
-   double message = 16;
+   double message = 20;
    double c = pow(message,e); //encrypt the message
    double m = pow(c,d);
    c=fmod(c,n);
