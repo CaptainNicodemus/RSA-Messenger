@@ -73,6 +73,8 @@ C++ RSA encryptor and decryptor - ./crypt/\C++ RSA key generator\cmake-build-deb
 
 I also added some RSA documents for reference.
 
+Next steps: Convert RSA into python and add better inputs
+
 ​	**Trey Tolleson**
 
 Sprint 1 data base: [vertabelo](https://my.vertabelo.com/public-model-view/Zf7pHePlY5ezN1TGpDdgoPh01FjFGnjADZO8yimuoBF2M0fmjokpquRsEuDpIsFb?x=1883&y=2162&zoom=0.4632)
