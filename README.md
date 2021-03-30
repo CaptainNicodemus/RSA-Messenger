@@ -67,7 +67,7 @@ To-do list:
 
 ​	**Nicodemus Robles** 
 
-C++ RSA encryptor and decryptor - ./crypt
+C++ RSA encryptor and decryptor - ./crypt/\C++ RSA key generator\cmake-build-debug\C___RSA_key_generator.exe
 
 - This sprint I added  a C++ RSA encryptor and decryptor. In its current state, the program can only encrypt/decrypt hard coded int's and the key's aren't strong . 
 
@@ -82,8 +82,8 @@ I also added some RSA documents for reference.
 
 
 ​	**Roman Iles**
-    Prime generation: 
-      implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
+​    Prime generation: 
+​      implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
 
 
 
