@@ -82,8 +82,10 @@ I also added some RSA documents for reference.
 
 ​
 ​	**Roman Iles**
-    Prime generation: 
-      implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
+    
+Prime generation:  
+
+implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
         
 - The base RSA algorithm operates with prime numbers, which will us erandomly generated prime numbers. Because this process is best done with algorithms that only "probably" generate prime numbers, we have primality tests to validate.
           
