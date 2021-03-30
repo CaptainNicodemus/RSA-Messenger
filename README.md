@@ -53,10 +53,6 @@ Team Members: Nicodemus Robles, Trey Tolleson, Mandi Renae Palencia, Roman Iles
 * Sprint 1: Encryption Algorithm
   1. To begin our project, we will need to create an Encryption Algorithm for simple messages.
   2. As a message app user, we would like an RSA messenger with a strong encryption sequence.
-  
-  - Sprint 1 features/accomplishments:
-    1. Prime generation: implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
-
 
 To-do list:
 
@@ -82,7 +78,8 @@ To-do list:
 
 
 ​	**Roman Iles**
-
+    Prime generation: 
+      implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
 
 
 
