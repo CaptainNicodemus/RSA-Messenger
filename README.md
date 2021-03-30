@@ -41,7 +41,11 @@
 
 				- [RSA Basics](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 				- [Youtube Explains RSA](https://www.youtube.com/watch?v=wXB-V_Keiu8)
-
+  
+  Information on prime number generation and primality testing:
+        - [Generation of primes](https://en.wikipedia.org/wiki/Generation_of_primes)
+        - [Fermat primality test](https://en.wikipedia.org/wiki/Primality_test#Fermat_primality_test)
+        
 ## Features
 
 - **Features:** What will be the initial features in this first sprint.
@@ -53,7 +57,9 @@
 * Sprint 1: Encryption Algorithm
   1. To begin our project, we will need to create an Encryption Algorithm for simple messages.
   2. As a message app user, we would like an RSA messenger with a strong encryption sequence.
-
+  
+  - Sprint 1 features/accomplishments:
+    1. Prime generation: implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
 
 
 To-do list:
