@@ -1,3 +1,6 @@
+# Basic fermat primality test for prime numbers
+#
+# This will probably get integrated into a composite primality test.
 
 import random
 
