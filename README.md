@@ -85,9 +85,9 @@ Next step is to find a suitable database service to deploy model into.
 
 ​	**Mandi Renae Palencia** 
 
-Sprint 1 chat: I've made a simple chatroom app that use scoket programming in python to connect a server and client. Mulitple users can join as long as they have the same host and port.
+Sprint 1 chat: I've made a simple chatroom app that uses socket programming in python to connect a server and client. Multiple users can join. The code can be found in the "socket" folder.
 
-We plan on creating a desktop application with this simple base.
+We plan on creating a desktop application with this simple base. The code connects two nodes on a network to communicate to each other. The socket or node listens on a particular port at an IP, while the other socket searches to form a connection.
 
 Next steps: Integrate RSA with chat application and use Universal Windows Platform to create an official desktop application.
 
