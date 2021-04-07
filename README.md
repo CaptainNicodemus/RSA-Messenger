@@ -67,33 +67,38 @@ To-do list:
 
 ​	**Nicodemus Robles** 
 
-C++ RSA encryptor and decryptor - ./crypt
+C++ RSA encryptor and decryptor - ./crypt/\C++ RSA key generator\cmake-build-debug\C___RSA_key_generator.exe
 
 - This sprint I added  a C++ RSA encryptor and decryptor. In its current state, the program can only encrypt/decrypt hard coded int's and the key's aren't strong . 
 
 I also added some RSA documents for reference.
 
+Next steps: Convert RSA into python and add better inputs
+
 ​	**Trey Tolleson**
 
-​Sprint 1 data base: [vertabelo](https://my.vertabelo.com/public-model-view/Zf7pHePlY5ezN1TGpDdgoPh01FjFGnjADZO8yimuoBF2M0fmjokpquRsEuDpIsFb?x=1883&y=2162&zoom=0.4632)
+Sprint 1 data base: [vertabelo](https://my.vertabelo.com/public-model-view/Zf7pHePlY5ezN1TGpDdgoPh01FjFGnjADZO8yimuoBF2M0fmjokpquRsEuDpIsFb?x=1883&y=2162&zoom=0.4632)
 
 - Database model for messaging between users within application. Can be converted to query language to be used in chosen DBM
 
 Next step is to find a suitable database service to deploy model into.
 
-
 ​	**Mandi Renae Palencia** 
 
+Sprint 1 chat: I've made a simple chatroom app that uses socket programming in python to connect a server and client. Multiple users can join. The code can be found in the "socket" folder.
 
-​
-​	**Roman Iles**
-    
-Prime generation:  
+We plan on creating a desktop application with this simple base. The code connects two nodes on a network to communicate to each other. The socket or node listens on a particular port at an IP, while the other socket searches to form a connection.
 
-implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
-        
+Next steps: Integrate RSA with chat application and use Universal Windows Platform to create an official desktop application.
+
+**Roman Iles**
+
+​    Prime generation: 
+​      implemented the fermat primality test in python:  [fermat_primality.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/primes/fermat_primality.py)
+​        
+
 - The base RSA algorithm operates with prime numbers, which will us erandomly generated prime numbers. Because this process is best done with algorithms that only "probably" generate prime numbers, we have primality tests to validate.
-          
+  
 - Next up would be feeding this primality test (it has its flaws) into some other primality tests to up the validation. I would also work on a prime-number generator. There are several proven generators that have high probabilities of generating primes, but validation is still important.
 
 

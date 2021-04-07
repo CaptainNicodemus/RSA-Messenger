@@ -1,6 +1,7 @@
 #include <iostream>
-#include<math.h>
+#include <math.h>
 #include <string>
+#include <cstdio>
 
 using namespace std;
 
@@ -38,7 +39,9 @@ int main() {
    //choosing d such that it satisfies d*e = 1 mod phi
    double d1=1/e;
    double d=fmod(d1,phi);
+   cout << "Enter int :";
    double message = 20;
+   cin >> message;
    double c = pow(message,e); //encrypt the message
    double m = pow(c,d);
    c=fmod(c,n);
@@ -53,5 +56,6 @@ int main() {
    cout<<"\n"<<"d = "<<d;
    cout<<"\n"<<"Encrypted message = "<<c;
    cout<<"\n"<<"Decrypted message = "<<m;
-   return 0;
+   cin >> message;
+    return 0;
 }
