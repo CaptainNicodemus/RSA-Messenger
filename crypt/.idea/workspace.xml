@@ -31,11 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11597eaf-e694-43b6-9177-b60087e2531a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/decrypting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/encrypting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/interface.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +51,15 @@
   </component>
   <component name="JupyterTrust" id="81d33697-7f5d-4b8e-a1da-39594794e858" />
   <component name="ProjectId" id="1qoOgkNTWTH848XZdHqGNQxC22L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -116,7 +115,7 @@
       <updated>1617742589815</updated>
       <workItem from="1617742590867" duration="687000" />
       <workItem from="1617743406240" duration="2981000" />
-      <workItem from="1617748408537" duration="2740000" />
+      <workItem from="1617748408537" duration="5225000" />
     </task>
     <servers />
   </component>
@@ -135,27 +134,30 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="907" y="401" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1617743254973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="907" y="401" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617743254973" />
-    <state width="2517" height="644" key="GridCell.Tab.0.bottom" timestamp="1617751341690">
+    <state width="2517" height="644" key="GridCell.Tab.0.bottom" timestamp="1617834929470">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617751341690" />
-    <state width="2517" height="644" key="GridCell.Tab.0.center" timestamp="1617751341690">
+    <state width="2517" height="644" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617834929470" />
+    <state width="2517" height="644" key="GridCell.Tab.0.center" timestamp="1617834929470">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617751341690" />
-    <state width="2517" height="644" key="GridCell.Tab.0.left" timestamp="1617751341690">
+    <state width="2517" height="644" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617834929470" />
+    <state width="2517" height="644" key="GridCell.Tab.0.left" timestamp="1617834929470">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617751341690" />
-    <state width="2517" height="644" key="GridCell.Tab.0.right" timestamp="1617751341690">
+    <state width="2517" height="644" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617834929470" />
+    <state width="2517" height="644" key="GridCell.Tab.0.right" timestamp="1617834929470">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617751341690" />
+    <state width="2517" height="644" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617834929470" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1617745378449">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
