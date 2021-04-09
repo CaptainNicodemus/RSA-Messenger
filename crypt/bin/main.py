@@ -1,8 +1,18 @@
 import rsa
 import pickle
-
+from bin.encrypt.key_work import *
 
 #load or make key
+loadingKeys()
+
+
+
+
+
+print(bob_pub)
+print(bob_priv)
+print(crypto)
+print(message.decode('utf8'))
 
 #making new key
 (pub, priv) = rsa.newkeys(1024)

@@ -31,12 +31,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11597eaf-e694-43b6-9177-b60087e2531a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/Keys/priv.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Keys/pub.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/interface/interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/encrypt/key_work.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/keys/priv.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/keys/pub.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/interface.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/key_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/key_gen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Keys/priv.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Keys/pub.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/decrypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/encrypt/decrypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/encrypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/encrypt/encrypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interface/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/interface/interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/key_gen.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,9 +84,12 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nicod\Documents\School\Programming\Software Eng\RSA messenger\crypt\bin" />
+      <recent name="C:\Users\nicod\Documents\School\Programming\Software Eng\RSA messenger\crypt\bin\encrypt" />
+      <recent name="C:\Users\nicod\Documents\School\Programming\Software Eng\RSA messenger\crypt\bin\Keys" />
+      <recent name="C:\Users\nicod\Documents\School\Programming\Software Eng\RSA messenger\crypt\bin\interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.interface">
+  <component name="RunManager" selected="Python.main">
     <configuration name="interface" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="crypt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="key_gen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="key_work" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="crypt" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +125,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/key_gen.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\nicod\Documents\School\Programming\Software Eng\RSA messenger\crypt\bin\encrypt\key_work.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,9 +158,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.interface" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.key_gen" />
+        <item itemvalue="Python.key_work" />
+        <item itemvalue="Python.interface" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +175,7 @@
       <workItem from="1617742590867" duration="687000" />
       <workItem from="1617743406240" duration="2981000" />
       <workItem from="1617748408537" duration="5225000" />
-      <workItem from="1617921114867" duration="6270000" />
+      <workItem from="1617921114867" duration="12155000" />
     </task>
     <servers />
   </component>
@@ -199,30 +206,34 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="907" y="401" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617743254973" />
-    <state width="2517" height="644" key="GridCell.Tab.0.bottom" timestamp="1617935249869">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617938562232">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617935249869" />
-    <state width="2517" height="644" key="GridCell.Tab.0.center" timestamp="1617935249869">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617938562232" />
+    <state width="2517" height="644" key="GridCell.Tab.0.bottom" timestamp="1617943480837">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617935249869" />
-    <state width="2517" height="644" key="GridCell.Tab.0.left" timestamp="1617935249869">
+    <state width="2517" height="644" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617943480837" />
+    <state width="2517" height="644" key="GridCell.Tab.0.center" timestamp="1617943480837">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617935249869" />
-    <state width="2517" height="644" key="GridCell.Tab.0.right" timestamp="1617935249869">
+    <state width="2517" height="644" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617943480837" />
+    <state width="2517" height="644" key="GridCell.Tab.0.left" timestamp="1617943480837">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="644" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617935249869" />
+    <state width="2517" height="644" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617943480837" />
+    <state width="2517" height="644" key="GridCell.Tab.0.right" timestamp="1617943480837">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="644" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617943480837" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1617745378449">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617745378449" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/crypt$main.coverage" NAME="main Coverage Results" MODIFIED="1617926569663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
-    <SUITE FILE_PATH="coverage/crypt$key_gen.coverage" NAME="key_gen Coverage Results" MODIFIED="1617921872632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
-    <SUITE FILE_PATH="coverage/crypt$interface.coverage" NAME="interface Coverage Results" MODIFIED="1617935249864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
+    <SUITE FILE_PATH="coverage/crypt$main.coverage" NAME="main Coverage Results" MODIFIED="1617943480832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
+    <SUITE FILE_PATH="coverage/crypt$key_gen.coverage" NAME="key_work Coverage Results" MODIFIED="1617941995056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
+    <SUITE FILE_PATH="coverage/crypt$interface.coverage" NAME="interface Coverage Results" MODIFIED="1617940950116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
   </component>
 </project>
