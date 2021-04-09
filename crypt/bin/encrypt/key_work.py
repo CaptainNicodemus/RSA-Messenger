@@ -43,20 +43,18 @@ def userNameUpdate():
         userName = userName.strip()
 
         #check number
-
         numb = '#1234'
 
         print("Is this ok? :", userName,numb)
-        action = input("Is this ok : ?")
+        action = input("y/n :")
 
-        if player_action == '1':
-            act1
-
-        elif player_action == '2':
-            act2
+        if action == 'y':
             return
 
+        elif action == 'n':
+            print("lets try again")
+
         else:
-            print("Please type \'1\', \'2\', \'3\', or \'4\'")
+            print("Please type y or n")
 
     return userName
