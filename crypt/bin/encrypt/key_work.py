@@ -37,6 +37,10 @@ def newkeys():
 
 
 def loadkeys():
+
+    #User picks folder with key's (pub.dat) & (priv.dat)
+
+
     pass
 
 

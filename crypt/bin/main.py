@@ -6,7 +6,17 @@ from bin.encrypt.key_work import *
 loadingKeys()
 
 
+#pull messages useing public key
 
+
+
+#send messages
+
+
+
+
+
+#this is trash right now
 
 
 print(bob_pub)
