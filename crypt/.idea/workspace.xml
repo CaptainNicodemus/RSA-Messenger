@@ -31,14 +31,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11597eaf-e694-43b6-9177-b60087e2531a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/keys/CaptainNIcodemus/priv.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/keys/CaptainNIcodemus/pub.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/keys/why/priv.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/keys/why/pub.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/encrypt/key_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/encrypt/key_work.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/keys/priv.dat" beforeDir="false" afterPath="$PROJECT_DIR$/bin/keys/priv.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/keys/pub.dat" beforeDir="false" afterPath="$PROJECT_DIR$/bin/keys/pub.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/keys/priv.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/keys/pub.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +171,7 @@
       <workItem from="1617748408537" duration="5225000" />
       <workItem from="1617921114867" duration="14157000" />
       <workItem from="1617945544677" duration="109000" />
+      <workItem from="1618091600281" duration="1202000" />
     </task>
     <servers />
   </component>
@@ -204,10 +202,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="907" y="401" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617743254973" />
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617938562232">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618092060576">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617938562232" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1618092060576" />
     <state width="2517" height="348" key="GridCell.Tab.0.bottom" timestamp="1617945654287">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -228,6 +226,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1617745378449" />
+    <state x="987" y="299" width="585" height="801" key="find.popup" timestamp="1618091689905">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="987" y="299" width="585" height="801" key="find.popup/0.0.2560.1400/-1920.131.1920.1040@0.0.2560.1400" timestamp="1618091689905" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/crypt$main.coverage" NAME="main Coverage Results" MODIFIED="1617945547111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
