@@ -103,6 +103,16 @@ Next steps: Integrate RSA with chat application and use Universal Windows Platfo
 
 
 
+## Updates
+
+### Sprint 2
+
+
+​	**Trey Tolleson**
+
+Created a database to hold user information on Microsoft Azure Cloud Services. There is a working piece of code to add users to database in Database Model/ main.py.
+The Next Step is to integrate the database with Mandi's server and client application.
+
 ## Setup
 
 * Summary of set up
