@@ -109,7 +109,7 @@ Next steps: Integrate RSA with chat application and use Universal Windows Platfo
 
  **Mandi Palencia**
 
- Dicussed logistics of how to connect the GUI to the ecryption and database code. We wanted to add a feature to the chat for attaching an image so I have added a new feature that allows the user to add an image from their local directory, albeit the code to send the image to the server needs to be worked on.
+ Discussed logistics of how to connect the GUI to the ecryption and database code. We wanted to add a feature to the chat for attaching an image so I have added a new feature that allows the user to add an image from their local directory, albeit the code to send the image to the server needs to be worked on.
 
 ​	**Trey Tolleson**
 
