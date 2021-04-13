@@ -31,12 +31,16 @@ def newkeys():
     print('\nmaking new keys...\n')
     (pub, priv) = rsa.newkeys(1024)
 
-    pickle.dump(pub, open("Keys/pub.dat", "wb"))
-    pickle.dump(priv, open("Keys/priv.dat", "wb"))
+    pickle.dump(pub, open(f"keys/{userName}/pub.dat", "wb"))
+    pickle.dump(priv, open(f"keys/{userName}/priv.dat", "wb"))
     print('keys made and saved\n\n')
 
 
 def loadkeys():
+
+    #User picks folder with key's (pub.dat) & (priv.dat)
+
+
     pass
 
 
