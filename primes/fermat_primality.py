@@ -6,7 +6,7 @@ import random
 
 def fermat_primality(randPrime):
   
-  if (randPrime % 2 == 0 && randPrime):
+  if (randPrime % 2 == 0 and randPrime):
     return False
     
   upper_bound = randPrime - 1
