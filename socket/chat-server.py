@@ -67,17 +67,6 @@ if __name__ == "__main__":
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 # # Python program to implement server side of chat room.
 # import socket
 # import select

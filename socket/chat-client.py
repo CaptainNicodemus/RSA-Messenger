@@ -3,6 +3,7 @@
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 import tkinter
+from tkinter.filedialog import askopenfile
 
 
 def receive():
@@ -49,6 +50,18 @@ entry_field.bind("<Return>", send)
 entry_field.pack()
 send_button = tkinter.Button(top, text="Send", command=send)
 send_button.pack()
+
+def open_file():
+    file = askopenfile(mode ='r', filetypes =[('Images', '*.jpg')])
+    my_img
+    if file is not None:
+        content = file.read()
+        print(content)
+  
+btn = tkinter.Button(top, text ='Open Image', command = lambda:open_file())
+btn.pack(side =tkinter.LEFT)
+
+top.protocol("WM_DELETE_WINDOW", on_closing)
 
 top.protocol("WM_DELETE_WINDOW", on_closing)
 
