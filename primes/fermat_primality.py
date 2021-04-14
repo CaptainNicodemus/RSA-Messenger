@@ -6,7 +6,8 @@ import random
 
 def fermat_primality(randPrime):
   
-  if (randPrime % 2 == 0 and randPrime):
+  #print("Fermat primality testing...")
+  if (randPrime % 2 == 0 or randPrime < 3 or randPrime % 5 == 0):
     return False
     
   upper_bound = randPrime - 1
@@ -15,11 +16,13 @@ def fermat_primality(randPrime):
   # Do five iterations to weed out pseudoprimes
   isPrime = False
   
-  for i in 40:
+  for i in range(0, 5):
+    #print(i)
     if (witness ** (randPrime - 1) % randPrime == 1):
       isPrime = True
-    else: isPrime = False
-    
+    else: 
+      isPrime = False
+      break
     witness = random.randrange(1, upper_bound, 1)
   
   return isPrime
