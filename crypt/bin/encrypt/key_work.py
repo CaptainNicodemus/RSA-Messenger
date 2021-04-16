@@ -7,9 +7,9 @@ import rsa
 def loadingKeys():
     action = input("load or make new user? (l/n)")
     if action == 'l':
-        loadkeys()
+        return loadkeys()
     elif action == 'n':
-        newkeys()
+        return newkeys()
     else:
         print("error")
 
@@ -35,13 +35,18 @@ def newkeys():
     pickle.dump(priv, open(f"keys/{userName}/priv.dat", "wb"))
     print('keys made and saved\n\n')
 
+    return loadkeys()
+
 
 def loadkeys():
+    #gets folder with key's (pub.dat) & (priv.dat) retuns values
 
-    #User picks folder with key's (pub.dat) & (priv.dat)
+    
 
+    pub = 0
+    priv = 0
 
-    pass
+    return pub, priv
 
 
 def userNameUpdate():
