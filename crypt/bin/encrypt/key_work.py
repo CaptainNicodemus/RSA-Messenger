@@ -35,18 +35,20 @@ def newkeys():
     pickle.dump(priv, open(f"keys/{userName}/priv.dat", "wb"))
     print('keys made and saved\n\n')
 
-    return loadkeys()
+    folder_location = f"keys/{userName}"
+
+    return loadkeys(folder_location)
 
 
-def loadkeys():
-    #gets folder with key's (pub.dat) & (priv.dat) retuns values
+def loadkeys(folderLocation):
+    #give folder with key's (pub.dat) & (priv.dat) retuns values
 
-    
+    user_name = folderLocation
+    pub = pickle.load(open(f"{folderLocation}/pub.dat", "rb"))
+    priv = pickle.load(open(f"{folderLocation}/priv.dat", "rb"))
 
-    pub = 0
-    priv = 0
+    return pub, priv, user_name
 
-    return pub, priv
 
 
 def userNameUpdate():

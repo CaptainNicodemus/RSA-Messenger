@@ -4,7 +4,7 @@ from bin.encrypt.key_work import *
 
 #load or make key
 
-local_pub,local_priv = loadingKeys()
+local_pub,local_priv,userName = loadingKeys()
 
 #pull messages useing public key
 
@@ -21,6 +21,6 @@ local_pub,local_priv = loadingKeys()
 
 print(local_pub)
 print(local_priv)
-print(crypto)
+print(userName)
 print(message.decode('utf8'))
 
