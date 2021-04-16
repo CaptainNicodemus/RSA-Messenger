@@ -53,10 +53,11 @@ def userNameUpdate():
         # check number
         numb = '#1234'
 
-        print("Is this ok? :", userName, numb)
+        print("Is this ok? :", userName,numb)
         action = input("y/n :")
 
         if action == 'y':
+            userName = userName + numb
             return userName
 
         elif action == 'n':
