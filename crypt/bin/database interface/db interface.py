@@ -13,7 +13,7 @@ cursor = cnxn.cursor()
 def user_add(user_name, public_key):
     # check if user_name already exists in database
     check_username = cursor.execute(
-        'SELECT user_name FROM user WHERE user_name = %(username)s', (user_name,))
+        'SELECT user_name FROM user WHERE user_name = %(public_key)s', (public_key,))
     check_username = cursor.fetchone()
     if check_username != 0:
         id = cursor.execute(
@@ -28,7 +28,7 @@ def user_add(user_name, public_key):
         print('user_name already exists in database')
 
 
-def user_login(user_name, public_key):
+def user_login (public_key):
     check_login = cursor.execute(
         'SELECT user_name FROM user WHERE user_name = %(user_name)s, public_key = %(public_key)',
         (user_name, public_key))
@@ -37,3 +37,11 @@ def user_login(user_name, public_key):
         print("Log in successful")
     else:
         print("User name or public key incorrect")
+
+def get_messages(public_key):
+
+def send_messages(public_key):
+
+def change_user_name(new_user_name, public_key):
+
+    
