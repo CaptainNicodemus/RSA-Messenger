@@ -1,7 +1,7 @@
 import pyodbc
 
 server = 'vulcans.database.windows.net'
-database = 'Vulcancrypter'
+database = 'Vulcans'
 username = 'vulcans'
 password = 'Vulcanproject2021'
 
@@ -16,8 +16,13 @@ def user_add(user_name, public_key):
         'SELECT user_name FROM user WHERE user_name = %(username)s', (user_name,))
     check_username = cursor.fetchone()
     if check_username != 0:
+        id = cursor.execute(
+            'SELECT MAX id FROM user')
+        id = cursor.fetchone()
+        id = id + 1
+        check_username = cursor.fetchone()
         cursor.execute(
-            "INSERT INTO [dbo].[user] ([user_name], [public_key]) VALUES (user_name, public_key)")
+            "INSERT INTO [dbo].[user] ([id],[user_name], [public_key]) VALUES (id, user_name, public_key)")
         print('User added')
     else:
         print('user_name already exists in database')
