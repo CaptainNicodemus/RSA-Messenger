@@ -2,7 +2,7 @@ import pickle
 import os
 import rsa
 from asyncore import loop
-
+from bin.database_interface.db_interface import *
 
 def loadingKeys():
     action = input("load or make new user? (l/n)")
