@@ -37,9 +37,7 @@ def newkeys():
 
     folder_location = f"keys/{userName}"
 
-    add_user(userName,pub)
-
-
+    user_add(userName, pub)
 
     return loadkeys(folder_location)
 
