@@ -31,20 +31,21 @@ def user_add(user_name, public_key):
 def user_login (public_key):
     check_login = cursor.execute(
         'SELECT user_name FROM user WHERE user_name = %(user_name)s, public_key = %(public_key)',
-        (user_name, public_key))
+        (public_key))
     check_login = cursor.fetchone()
     if check_login != 0:
         print("Log in successful")
     else:
         print("User name or public key incorrect")
 
-<<<<<<< HEAD
-=======
 def get_messages(public_key):
+    return ("not linked")
+
 
 def send_messages(public_key):
+    return ("not linked")
 
 def change_user_name(new_user_name, public_key):
+    return ("not linked")
 
-    
->>>>>>> master
+
