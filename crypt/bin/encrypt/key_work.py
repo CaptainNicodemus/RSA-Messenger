@@ -1,7 +1,7 @@
 import pickle
 import os
-from asyncore import loop
 import rsa
+from asyncore import loop
 
 
 def loadingKeys():
@@ -37,6 +37,10 @@ def newkeys():
 
     folder_location = f"keys/{userName}"
 
+    add_user(userName,pub)
+
+
+
     return loadkeys(folder_location)
 
 
@@ -57,14 +61,11 @@ def userNameUpdate():
         userName = input("Enter new public user name: ")
         userName = userName.strip()
 
-        # check number
-        numb = '#1234'
-
-        print("Is this ok? :", userName,numb)
+        print("Is this ok? :", userName)
         action = input("y/n :")
 
         if action == 'y':
-            userName = userName + numb
+            userName = userName
             return userName
 
         elif action == 'n':

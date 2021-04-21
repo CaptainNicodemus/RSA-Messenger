@@ -1,5 +1,5 @@
 import rsa
-import pickle
+
 from bin.encrypt.key_work import *
 
 #load or make key
