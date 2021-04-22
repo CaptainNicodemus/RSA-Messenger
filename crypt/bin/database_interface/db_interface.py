@@ -13,7 +13,7 @@ cursor = cnxn.cursor()
 def user_add(user_name, public_key):
     # check if user_name already exists in database
     check_username = cursor.execute(
-        "SELECT user_name FROM user WHERE user_name=%s",(public_key,))
+        "SELECT user_name FROM user WHERE user_name=?",(public_key,))
     check_username = cursor.fetchone()
     if check_username != 0:
         id = cursor.execute(
@@ -22,7 +22,7 @@ def user_add(user_name, public_key):
         id = id + 1
         check_username = cursor.fetchone()
         cursor.execute(
-            "INSERT INTO [dbo].[user] ([id],[user_name], [public_key]) VALUES (%s, %s, %s)",
+            "INSERT INTO [dbo].[user] ([id],[user_name], [public_key]) VALUES (?, ?, ?)",
             (id, user_name, public_key))
         print('User added')
     else:
