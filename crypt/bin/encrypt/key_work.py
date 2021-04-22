@@ -1,15 +1,15 @@
 import pickle
 import os
-from asyncore import loop
 import rsa
-
+from asyncore import loop
+from bin.database_interface.db_interface import *
 
 def loadingKeys():
     action = input("load or make new user? (l/n)")
     if action == 'l':
-        loadkeys()
+        return loadkeys()
     elif action == 'n':
-        newkeys()
+        return newkeys()
     else:
         print("error")
 
@@ -35,13 +35,22 @@ def newkeys():
     pickle.dump(priv, open(f"keys/{userName}/priv.dat", "wb"))
     print('keys made and saved\n\n')
 
+    folder_location = f"keys/{userName}"
 
-def loadkeys():
+    user_add(userName, pub)
 
-    #User picks folder with key's (pub.dat) & (priv.dat)
+    return loadkeys(folder_location)
 
 
-    pass
+def loadkeys(folderLocation):
+    #give folder with key's (pub.dat) & (priv.dat) retuns values
+
+    user_name = folderLocation
+    pub = pickle.load(open(f"{folderLocation}/pub.dat", "rb"))
+    priv = pickle.load(open(f"{folderLocation}/priv.dat", "rb"))
+
+    return pub, priv, user_name
+
 
 
 def userNameUpdate():
@@ -50,14 +59,11 @@ def userNameUpdate():
         userName = input("Enter new public user name: ")
         userName = userName.strip()
 
-        # check number
-        numb = '#1234'
-
-        print("Is this ok? :", userName,numb)
+        print("Is this ok? :", userName)
         action = input("y/n :")
 
         if action == 'y':
-            userName = userName + numb
+            userName = userName
             return userName
 
         elif action == 'n':
