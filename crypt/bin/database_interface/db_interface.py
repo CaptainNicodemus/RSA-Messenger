@@ -1,4 +1,4 @@
-from bin.database_interface.googleSheetToPython import *
+from bin.database_interface.googleSheetToPython import add_user_name_update, add_message
 
 
 def send_message(sender_pubkey, encrypted_messageR, encrypted_messageS, receiver_pubKey):
@@ -6,7 +6,7 @@ def send_message(sender_pubkey, encrypted_messageR, encrypted_messageS, receiver
     return
 
 def user_name_update(pubKey, new_username):
-    user_name_update(pubKey, new_username)
+    add_user_name_update(pubKey, new_username)
     return
 
 def pull_message(pubKey):

@@ -1,17 +1,24 @@
-import rsa
-
+from bin.database_interface.db_interface import *
 from bin.encrypt.key_work import *
+from bin.encrypt.encrypt import *
+from bin.encrypt.decrypt import *
 
 #load or make key
 
 local_pub,local_priv,userName = loadingKeys()
 
-#pull messages useing public key
+
+
 
 
 
 #send messages
 
+message = "This is a test"
+message = encryptmsg(local_pub,message)
+
+
+send_message(local_pub,message,message,local_pub)
 
 
 
