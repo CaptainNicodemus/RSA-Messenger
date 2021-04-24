@@ -39,6 +39,7 @@ def newkeys():
     folder_location = f"keys/myKeys/{user_name}"
 
     print('Updateing Database with new user')
+    #adds user to database
     user_name_update(pub, user_name)
     print('\nLocked and loaded\n\n')
 
