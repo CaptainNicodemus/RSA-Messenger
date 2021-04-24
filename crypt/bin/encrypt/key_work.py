@@ -18,12 +18,12 @@ def newkeys():
     pub = None
     priv = None
 
-    userName = userNameUpdate()
+    user_name = userNameUpdate()
 
     print('\nCreating a new file')
-    createFolder(f"keys/{userName}")
-    folder1 = f"keys/{userName}/pub.dat"
-    folder2 = f"keys/{userName}/priv.dat"
+    createFolder(f"keys/{user_name}")
+    folder1 = f"keys/{user_name}/pub.dat"
+    folder2 = f"keys/{user_name}/priv.dat"
 
     pickle.dump(pub, open(folder1, "wb"))
     pickle.dump(priv, open(folder2, "wb"))
@@ -31,13 +31,13 @@ def newkeys():
     print('\nmaking new keys...\n')
     (pub, priv) = rsa.newkeys(1024)
 
-    pickle.dump(pub, open(f"keys/{userName}/pub.dat", "wb"))
-    pickle.dump(priv, open(f"keys/{userName}/priv.dat", "wb"))
+    pickle.dump(pub, open(f"keys/{user_name}/pub.dat", "wb"))
+    pickle.dump(priv, open(f"keys/{user_name}/priv.dat", "wb"))
     print('keys made and saved\n\n')
 
-    folder_location = f"keys/{userName}"
+    folder_location = f"keys/{user_name}"
 
-    #user_add(userName, pub)
+    user_name_update(pub, user_name)
 
     return loadkeys(folder_location)
 

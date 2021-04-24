@@ -1,65 +1,32 @@
-import pyodbc
-
-server = 'vulcans.database.windows.net'
-database = 'Vulcans'
-username = 'vulcans'
-password = 'Vulcanproject2021'
-
-cnxn = pyodbc.connect(
-    'DRIVER={SQL Server};SERVER=' + server + ';DATABASE=' + database + ';UID=' + username + ';PWD=' + password)
-cursor = cnxn.cursor()
+from bin.database_interface.googleSheetToPython import add_user_name_update, add_message
 
 
-def user_add(user_name, public_key):
-<<<<<<< HEAD
-    # check if user_name already exists in database
-    check_username = cursor.execute(
-        "SELECT user_name FROM user WHERE user_name=?",(public_key,))
-    check_username = cursor.fetchone()
-    if check_username != 0:
-        id = cursor.execute(
-            'SELECT MAX id FROM user')
-        id = cursor.fetchone()
-        id = id + 1
-        check_username = cursor.fetchone()
-        cursor.execute(
-            "INSERT INTO [dbo].[user] ([id],[user_name], [public_key]) VALUES (?, ?, ?)",
-            (id, user_name, public_key))
-        print('User added')
-    else:
-        print('user_name already exists in database')
-=======
-    # get highest user id from database and add one
-    id = cursor.execute(
-        'SELECT MAX id FROM user')
-    id = cursor.fetchone()
-    id = id + 1
+def send_message(sender_pubkey, encrypted_messageR, encrypted_messageS, receiver_pubKey):
+    add_message(sender_pubkey, encrypted_messageR, encrypted_messageS, receiver_pubKey)
+    return
 
-    cursor.execute(
-        "INSERT INTO [dbo].[user] ([id],[user_name], [public_key]) VALUES (?, ?, ?)",
-        (id, user_name, public_key))
-    return "User added"
->>>>>>> master
+def user_name_update(pubKey, new_username):
+    add_user_name_update(pubKey, new_username)
+    return
+
+def pull_message(pubKey):
+    my_messages = 0
+    return my_messages
 
 
-def user_login(public_key):
-    check_login = cursor.execute(
-        "SELECT user_name FROM user WHERE user_name = ?, public_key = ?",
-        (user_name, public_key))
-    check_login = cursor.fetchone()
-    if check_login != 0:
-        print("Log in successful")
-    else:
-        print("User name or public key incorrect")
 
 
-def get_messages(public_key):
-    return "not linked"
 
-
-def send_messages(public_key):
-    return "not linked"
-
-
-def change_user_name(new_user_name, public_key):
-    return "not linked"
+# def message_search(message):
+#   while True
+#
+#
+# def populate_cell(message):
+#   i = 1
+#   j = 1
+#   while True:
+#     cell = sheet.cell(i,j)
+#     if cell is not None:
+#       sheet.update_cell(i, j, message)
+#       return True
+#     i++
