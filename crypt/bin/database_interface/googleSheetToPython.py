@@ -1,17 +1,36 @@
-#import library
+# import library
 import gspread
-#Service client credential from oauth2client
+import pandas as pd
+from datetime import datetime
+# Service client credential from oauth2client
 from oauth2client.service_account import ServiceAccountCredentials
-# Print nicely
-import pprint
-#Create scope
-scope = ['https://spreadsheets.google.com/feeds']
-#create some credential using that scope and content of keys.json
-creds = ServiceAccountCredentials.from_json_keyfile_name(keys.json',scope)
-#create gspread authorize using that credential
+
+# define the scope
+scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+# add credentials to the account
+creds = ServiceAccountCredentials.from_json_keyfile_name('RSA Project-26ab4b3e3fbb.json', scope)
+# authorize the clientsheet
 client = gspread.authorize(creds)
-#Now will can access our google sheets we call client.open on StartupName
-sheet = client.open('Vulcans_RSA_Project').sheet1
-pp = pprint.PrettyPrinter()
-#Access all of the record inside that
-result = sheet.get_all_record()
+# get the instance of the Spreadsheet
+# sheet url
+# https://docs.google.com/spreadsheets/d/184i1rPt7J_WIB0jttxDaZ8WdBq5JD42p9oeAnmK9Leg/edit#gid=0
+sheet = client.open('Vulcans_RSA_Project')
+# get the first sheet of the Spreadsheet
+sheet_instance = sheet.get_worksheet(0)
+
+
+def add_message(sender_pubkey, encrypted_messageR, encrypted_messageS, receiver_pubKey):
+    sheet_instance.append_row(
+        [get_time_and_date(), sender_pubkey, receiver_pubKey, encrypted_messageR, encrypted_messageS])
+    return
+
+
+def get_time_and_date():
+    now = datetime.now()
+    dt_string = now.strftime("%m/%d/%Y %I:%M %p")
+    return dt_string
+
+
+def user_name_update(pubkey, new_username):
+    sheet_instance.append_row([get_time_and_date(), pubkey, "", "", "", new_username])
+    return
