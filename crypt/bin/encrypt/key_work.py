@@ -4,6 +4,7 @@ import rsa
 from asyncore import loop
 from bin.database_interface.db_interface import *
 
+
 def loadingKeys():
     action = input("load or make new user? (l/n)")
     if action == 'l':
@@ -18,32 +19,35 @@ def newkeys():
     pub = None
     priv = None
 
-    user_name = userNameUpdate()
+    user_name = ask_4_new_username()
 
-    print('\nCreating a new file')
-    createFolder(f"keys/{user_name}")
-    folder1 = f"keys/{user_name}/pub.dat"
-    folder2 = f"keys/{user_name}/priv.dat"
+    print('\ncreating a new file')
+    createFolder(f"keys/myKeys/{user_name}")
+    folder1 = f"keys/myKeys/{user_name}/pub.dat"
+    folder2 = f"keys/myKeys/{user_name}/priv.dat"
 
     pickle.dump(pub, open(folder1, "wb"))
     pickle.dump(priv, open(folder2, "wb"))
 
-    print('\nmaking new keys...\n')
+    print('making new keys...')
     (pub, priv) = rsa.newkeys(1024)
 
-    pickle.dump(pub, open(f"keys/{user_name}/pub.dat", "wb"))
-    pickle.dump(priv, open(f"keys/{user_name}/priv.dat", "wb"))
-    print('keys made and saved\n\n')
+    pickle.dump(pub, open(f"keys/myKeys/{user_name}/pub.dat", "wb"))
+    pickle.dump(priv, open(f"keys/myKeys/{user_name}/priv.dat", "wb"))
+    print('keys made and saved')
 
-    folder_location = f"keys/{user_name}"
+    folder_location = f"keys/myKeys/{user_name}"
 
+    print('Updateing Database with new user')
+    #adds user to database
     user_name_update(pub, user_name)
+    print('\nLocked and loaded\n\n')
 
     return loadkeys(folder_location)
 
 
 def loadkeys(folderLocation):
-    #give folder with key's (pub.dat) & (priv.dat) retuns values
+    # give folder with key's (pub.dat) & (priv.dat) retuns values
 
     user_name = folderLocation
     pub = pickle.load(open(f"{folderLocation}/pub.dat", "rb"))
@@ -52,8 +56,7 @@ def loadkeys(folderLocation):
     return pub, priv, user_name
 
 
-
-def userNameUpdate():
+def ask_4_new_username():
     while loop:
 
         userName = input("Enter new public user name: ")
