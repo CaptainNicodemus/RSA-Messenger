@@ -11,7 +11,6 @@ cursor = cnxn.cursor()
 
 
 def user_add(user_name, public_key):
-<<<<<<< HEAD
     # check if user_name already exists in database
     check_username = cursor.execute(
         "SELECT user_name FROM user WHERE user_name=?",(public_key,))
@@ -28,7 +27,7 @@ def user_add(user_name, public_key):
         print('User added')
     else:
         print('user_name already exists in database')
-=======
+
     # get highest user id from database and add one
     id = cursor.execute(
         'SELECT MAX id FROM user')
@@ -39,7 +38,6 @@ def user_add(user_name, public_key):
         "INSERT INTO [dbo].[user] ([id],[user_name], [public_key]) VALUES (?, ?, ?)",
         (id, user_name, public_key))
     return "User added"
->>>>>>> master
 
 
 def user_login(public_key):

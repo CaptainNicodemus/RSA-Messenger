@@ -22,5 +22,5 @@ local_pub,local_priv,userName = loadingKeys()
 print(local_pub)
 print(local_priv)
 print(userName)
-print(message.decode('utf8'))
+
 
