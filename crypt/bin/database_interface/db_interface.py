@@ -13,20 +13,8 @@ def pull_message(pubKey):
     my_messages = 0
     return my_messages
 
+# Search for a username based on pubKey
+def key_name_search(pubKey):
 
-
-
-
-# def message_search(message):
-#   while True
-#
-#
-# def populate_cell(message):
-#   i = 1
-#   j = 1
-#   while True:
-#     cell = sheet.cell(i,j)
-#     if cell is not None:
-#       sheet.update_cell(i, j, message)
-#       return True
-#     i++
+def get_message_table():
+def get_names_table():
