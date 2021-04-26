@@ -4,6 +4,7 @@ import rsa
 import time
 from asyncore import loop
 from bin.database_interface.db_interface import *
+from tkinter.filedialog import askdirectory
 
 
 def loadingKeys():
@@ -47,11 +48,8 @@ def newkeys():
     return loadkeys(folder_location)
 
 def ask_4_which_keys():
-
-    #looks into key folder and makes a list
-    #asks user to pick the key to load
-
-    folder_location = 0
+    path = askdirectory(title='Select Folder')  # shows dialog box and return the path
+    folder_location = path
     return folder_location
 
 def loadkeys(folderLocation):
@@ -96,5 +94,7 @@ def run_rsa_algo_primes():
     print("V0.3.13b")
     print("loading RSA algo.")
     time.sleep(.3)
-    print("done")
+    print("done\n\n\n\n")
     return
+
+
