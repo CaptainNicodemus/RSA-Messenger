@@ -4,10 +4,18 @@ from bin.encrypt.encrypt import *
 from bin.encrypt.decrypt import *
 
 #load or make key
-
 local_pub,local_priv,userName = loadingKeys()
 
+#loading friends public keys
+friends_key_table = [0, 0]
+#update usernames
 
+#pull messages
+
+#de-code messages
+
+
+# display msg
 
 #send messages
 
