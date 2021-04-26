@@ -1,6 +1,7 @@
 import pickle
 import os
 import rsa
+import time
 from asyncore import loop
 from bin.database_interface.db_interface import *
 
@@ -8,7 +9,7 @@ from bin.database_interface.db_interface import *
 def loadingKeys():
     action = input("load or make new user? (l/n)")
     if action == 'l':
-        return loadkeys()
+        return loadkeys(ask_4_which_keys())
     elif action == 'n':
         return newkeys()
     else:
@@ -45,6 +46,13 @@ def newkeys():
 
     return loadkeys(folder_location)
 
+def ask_4_which_keys():
+
+    #looks into key folder and makes a list
+    #asks user to pick the key to load
+
+    folder_location = 0
+    return folder_location
 
 def loadkeys(folderLocation):
     # give folder with key's (pub.dat) & (priv.dat) retuns values
@@ -83,3 +91,10 @@ def createFolder(directory):
             os.makedirs(directory)
     except OSError:
         print('Error: Creating directory. ' + directory)
+
+def run_rsa_algo_primes():
+    print("V0.3.13b")
+    print("loading RSA algo.")
+    time.sleep(.3)
+    print("done")
+    return

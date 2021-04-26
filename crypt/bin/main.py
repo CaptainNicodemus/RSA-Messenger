@@ -3,8 +3,10 @@ from bin.encrypt.key_work import *
 from bin.encrypt.encrypt import *
 from bin.encrypt.decrypt import *
 
+#bootup
+run_rsa_algo_primes()
 #load or make key
-local_pub,local_priv,userName = loadingKeys()
+local_pub,local_priv,my_userName = loadingKeys()
 
 #loading friends public keys
 friends_key_table = [0, 0]
@@ -33,6 +35,6 @@ send_message(local_pub,message,message,local_pub)
 
 print(local_pub)
 print(local_priv)
-print(userName)
+print(my_userName)
 
 

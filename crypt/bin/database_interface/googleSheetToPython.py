@@ -44,8 +44,6 @@ def add_user_name_update(pubkey, new_username):
     return
 
 
-def get_msg_and_username(my_pubkey, other_key_table):
-
-    #search into 1 api call then split table into 2
-
-    return #table
+def get_all_val():
+    list_of_lists = sheet_instance.get_all_values()
+    return list_of_lists
