@@ -1,10 +1,9 @@
-from bin.database_interface.db_interface import *
 from bin.encrypt.key_work import *
-from bin.encrypt.encrypt import *
-from bin.encrypt.decrypt import *
+from bin.encrypt.soical import *
+
 
 #bootup
-run_rsa_algo_primes()
+#run_rsa_algo_primes()
 #load or make key
 local_pub,local_priv,my_userName = loadingKeys()
 
@@ -16,25 +15,40 @@ friends_key_table = [0, 0]
 
 #de-code messages
 
+while loop:
 
-# display msg
+    action = input("\nWhat would you like to do?\n"
+                   "\n1 - send message"
+                   "\n2 - load messages"
+                   "\n3 - ReLoad user keys"
+                   "\n4 - Display keys"
+                   "\n5 - exit"
+                   "\n:")
 
-#send messages
+    if action == '1':
+        send_msg(local_pub)
 
-message = "This is a test"
-message = encryptmsg(local_pub,message)
+    elif action == '2':
+        print("lets try again")
 
+    elif action == '3':
+        local_pub,local_priv,my_userName = loadingKeys()
 
-send_message(local_pub,message,message,local_pub)
+    elif action == '4':
+        print("\n*WARNING SHARING PRIVATE KEYS ARE A SECURITY RISK*")
+        action = input("Do you still want to continue? (y/n)\n")
+        if action == 'y':
+            print(my_userName)
+            print(local_pub)
+            print(local_priv)
 
+        elif action == 'n':
+            print("")
 
-
-
-#this is trash right now
-
-
-print(local_pub)
-print(local_priv)
-print(my_userName)
-
+    elif action == '5':
+        print("good bye")
+        exit()
+    else:
+        print("error")
+        exit()
 
