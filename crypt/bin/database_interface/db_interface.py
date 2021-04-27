@@ -11,6 +11,7 @@ dataframe = dataframe.rename(columns={0: 'Time', 1: 'Public Key Sender', 2: 'Pub
                           4: 'MessageS', 5: 'Sender User Name'})
 dataframe = dataframe.drop(0)
 
+
 def send_message(sender_pubkey, encrypted_messageR, encrypted_messageS, receiver_pubKey):
   gstp.add_message(sender_pubkey, encrypted_messageR, encrypted_messageS, receiver_pubKey)
   return
@@ -25,23 +26,27 @@ def pull_message(pubKey):
 
 # Search for a username based on pubKey
 def key_name_search(pubKey):
-  i = 0
-  for key in dataframe['1']:
+  i = 1
+  for key in dataframe['Public Key Sender']:
     if key == pubKey:
-      return dataframe.iloc['5', i]
+      if dataframe.loc[i, "Sender User Name"] == "-":
+        continue
+      else:
+        return dataframe.loc[i, "Sender User Name"]
     i += 1
 
+# Move to pull_messages
 def get_messages(pubKey):
   messages = pandas.DataFrame
   messages.columns = ["Time", "Received", "Sent"]
 
-  sent_messages = pd.DataFrame(dataframe.loc[dataframe['Public Key Sender'] == pubKey])
+  sent_messages = dataframe["Time", "Public Key Sender", "Public Key Receiver", "MessageS"]
 
   print(sent_messages)
 
-  received_messages = pd.DataFrame(dataframe.loc[dataframe['Public Key Receiver'] == pubKey])
+ #received_messages = pd.DataFrame(dataframe.loc[dataframe['Public Key Receiver'] == pubKey])
 
-  print(received_messages)
+  #print(received_messages)
 
 def time_sort():
   #sort table by time
