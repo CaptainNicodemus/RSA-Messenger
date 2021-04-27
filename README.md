@@ -1,6 +1,7 @@
 
 
 
+
 ![Vulcans](./Readme%20images/Logo_White.png)
 # RSA Messenger - Read me
 
@@ -126,11 +127,12 @@ Next Step:
 Next Step:
 
 **Roman Iles**
-(update here)
-Next Step:
+Sped up prime number generation. Established workflow of the application's interactions with the database and the network. Worked on implementing the interface for the application with the database - commands now exist to pull a table of user messages that are always encrypted and made available to the user. [enter link description here](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/crypt/bin/database_interface/db_interface.py)
+
+Next Step: Work on validation of app-db interface. Create network interface. Work on GUI.
 
 **Trey Tolleson** 
-Helped create,implement and test the database and link the application to the database.This python file provides functions to give and recieve information to the databse.Most work and commits took place inside of [database_interface.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/crypt/bin/database_interface/db_interface.py)
+Helped create, implement and test the database and link the application to the database. This python file provides functions to give and receive information to the database. Most work and commits took place inside of [database_interface.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/crypt/bin/database_interface/db_interface.py)
 Next step: Help create and implement GUI and assure quality of database functionality
 
 ## Setup

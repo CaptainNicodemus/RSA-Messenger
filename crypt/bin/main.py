@@ -1,7 +1,8 @@
 from bin.encrypt.key_work import *
 from bin.encrypt.soical import *
 
-
+if __name__ == "__main__":
+  main()
 #bootup
 #run_rsa_algo_primes()
 #load or make key
@@ -15,7 +16,8 @@ friends_key_table = [0, 0]
 
 #de-code messages
 
-while loop:
+def main():
+  while loop:
 
     action = input("\nWhat would you like to do?\n"
                    "\n1 - send message"
