@@ -35,3 +35,4 @@ def load_recipient_key(folderLocation):
     pub = pickle.load(open(f"{folderLocation}/pub.dat", "rb"))
     return pub
 
+

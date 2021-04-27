@@ -22,7 +22,8 @@ while loop:
                    "\n2 - load messages"
                    "\n3 - ReLoad user keys"
                    "\n4 - Display keys"
-                   "\n5 - exit"
+                   "\n5 - update my username"
+                   "\n6 - exit"
                    "\n:")
 
     if action == '1':
@@ -46,6 +47,11 @@ while loop:
             print("")
 
     elif action == '5':
+        user_name = ask_4_new_username()
+        user_name_update(local_pub, user_name)
+        #add change file name
+
+    elif action == '6':
         print("good bye")
         exit()
     else:
