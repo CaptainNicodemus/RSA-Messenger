@@ -21,6 +21,15 @@ def user_name_update(pubKey, new_username):
   return
 
 def pull_message(pubKey):
+  table = time_sort()
+  user_messages = table[(table["Public Key Sender"] == pubKey) | (table["Public Key Receiver"] == pubKey)]
+  if user_messages.iloc[1]["Public Key Sender"] != "-":
+    return user_messages.iloc[1]["MessageS"]
+  else:
+    return user_messages[1]["MessageR"]
+
+
+def get_messages(pubKey):
   # Use pandas boolean indexing to filter public keys
   my_messages = dataframe[(dataframe["Public Key Sender"] == pubKey) | (dataframe["Public Key Receiver"] == pubKey)]
 
@@ -41,7 +50,7 @@ def key_name_search(pubKey):
     i += 1
 
 def time_sort():
-  time_sorted = dataframe.sort_values(by="Time")
+  time_sorted = dataframe.sort_values(by="Time", ascending=False)
   return time_sorted
 
 def name_sort():
@@ -49,6 +58,9 @@ def name_sort():
   name_sorted = name_sorted.sort_values(by="Sender User Name")
   return name_sorted
 
+
+
+# These two are probably junk now
 def get_message_table():
   #
   return
