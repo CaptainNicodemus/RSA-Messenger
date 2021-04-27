@@ -1,6 +1,6 @@
 import pandas
 
-import googleSheetToPython as gstp
+import database_interface.googleSheetToPython as gstp
 import pandas as pd
 
 
@@ -36,7 +36,11 @@ def get_messages(pubKey):
   # Clean up the dataframe
   my_messages = my_messages.drop("Public Key Sender", 1)
   my_messages = my_messages.drop("Public Key Receiver", 1)
-  return my_messages
+
+  if (my_messages.empty):
+    return "No messages."
+  else:
+    return my_messages
 
 # Search for a username based on pubKey
 def key_name_search(pubKey):
