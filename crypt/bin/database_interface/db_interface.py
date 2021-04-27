@@ -30,13 +30,17 @@ class db_interface:
     
     return #username
 
-  def time_sort(): 
-    #sort table by time
-    return
-      
-  def name_sort(): 
-    #sort by name
-    return
+  def time_sort(dataframe):
+      # unsure about dataframe
+      parametersself.dataframe['Date'] = pd.to_datetime(self.dataframe.Date)
+      sorted_df = self.dataframe.sort('Date')
+      return sorted_df  # sort table by time
+
+  def name_sort(dataframe):
+      # sort by name
+      # unsure about dataframe parameters
+      name_sorted_dataframe = self.dataframe.sort_values(by=['Name'])
+      return name_sorted_dataframe
     
   def get_message_table():
     #
