@@ -45,8 +45,9 @@ def time_sort():
   return time_sorted
 
 def name_sort():
-  #sort by name
-  return
+  name_sorted = dataframe[~(dataframe["Sender User Name"] == "-")]
+  name_sorted = name_sorted.sort_values(by="Sender User Name")
+  return name_sorted
 
 def get_message_table():
   #
