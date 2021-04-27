@@ -119,8 +119,8 @@ Created a database to hold user information on Microsoft Azure Cloud Services. T
 The Next Step is to integrate the database with Mandi's server and client application.
 ### Sprint 3
 **Nicodemus Robles** 
-(update here)
-Next Step:
+main.py now has a cmd interface with a menu, soical.py can now send messages and load in friends also able to  update username in the menu. Implemented database api's, added import/load keys function, and a testbot public key to send msg to users can now properly us their keys! Usernames are passes and displaied, no longer showing the whole file location. 
+Next Step: Fix integration issuses across platforms, link gui
 
 **Mandi Renae Palencia** 
 (update here)
