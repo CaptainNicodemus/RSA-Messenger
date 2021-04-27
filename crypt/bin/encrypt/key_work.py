@@ -5,7 +5,7 @@ import string
 import rsa
 import time
 from asyncore import loop
-from bin.database_interface.db_interface import *
+import database_interface.db_interface as dbi
 from tkinter.filedialog import askdirectory
 
 
@@ -44,7 +44,7 @@ def newkeys():
 
     print('Updateing Database with new user')
     #adds user to database
-    user_name_update(pub, user_name)
+    dbi.user_name_update(pub, user_name)
     print('\nLocked and loaded\n\n')
 
     return loadkeys(folder_location)

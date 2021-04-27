@@ -1,21 +1,20 @@
-from bin.encrypt.key_work import *
-from bin.encrypt.soical import *
-
+import encrypt.key_work as kw
+import encrypt.soical as soi
+import database_interface.db_interface as dbi
 
 #bootup
 #run_rsa_algo_primes()
-#load or make key
-local_pub,local_priv,my_userName = loadingKeys()
-
-#loading friends public keys
-friends_key_table = [0, 0]
 #update usernames
-
 #pull messages
-
 #de-code messages
 
-while loop:
+def main():
+  # load or make key
+  local_pub, local_priv, my_userName = kw.loadingKeys()
+
+  # loading friends public keys
+  friends_key_table = [0, 0]
+  while True:
 
     action = input("\nWhat would you like to do?\n"
                    "\n1 - send message"
@@ -27,13 +26,13 @@ while loop:
                    "\n:")
 
     if action == '1':
-        send_msg(local_pub)
+        soi.send_msg(local_pub)
 
     elif action == '2':
-        print("lets try again")
+        print(dbi.get_messages(local_pub))
 
     elif action == '3':
-        local_pub,local_priv,my_userName = loadingKeys()
+        local_pub,local_priv,my_userName = kw.loadingKeys()
 
     elif action == '4':
         print("\n*WARNING SHARING PRIVATE KEYS ARE A SECURITY RISK*")
@@ -58,3 +57,5 @@ while loop:
         print("error")
         exit()
 
+if __name__ == "__main__":
+  main()
