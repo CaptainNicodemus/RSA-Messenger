@@ -1,3 +1,5 @@
+
+
 ![Vulcans](./Readme%20images/Logo_White.png)
 # RSA Messenger - Read me
 
@@ -103,18 +105,32 @@ Next steps: Integrate RSA with chat application and use Universal Windows Platfo
 
 
 
-## Updates
-
 ### Sprint 2
 
  **Mandi Palencia**
 
- Discussed logistics of how to connect the GUI to the ecryption and database code. We wanted to add a feature to the chat for attaching an image so I have added a new feature that allows the user to add an image from their local directory, albeit the code to send the image to the server needs to be worked on. The new code can be found under the socket directory in the chat-client.py file. An imported library is used to open files in your directory and is attached to the "Open Image" button for the user to find and attach an image. TO RUN: python chat-server.py in a new terminal and run python chat-client.py in another terminal. Use 127.0.0.1 as the HOST and 33000 as the PORT.
+ Discussed logistics of how to connect the GUI to the encryption and database code. We wanted to add a feature to the chat for attaching an image so I have added a new feature that allows the user to add an image from their local directory, albeit the code to send the image to the server needs to be worked on. The new code can be found under the socket directory in the chat-client.py file. An imported library is used to open files in your directory and is attached to the "Open Image" button for the user to find and attach an image. TO RUN: python chat-server.py in a new terminal and run python chat-client.py in another terminal. Use 127.0.0.1 as the HOST and 33000 as the PORT.
 
 ​	**Trey Tolleson**
 
 Created a database to hold user information on Microsoft Azure Cloud Services. There is a working piece of code to add users to database in Database Model/ main.py.
 The Next Step is to integrate the database with Mandi's server and client application.
+### Sprint 3
+**Nicodemus Robles** 
+(update here)
+Next Step:
+
+**Mandi Renae Palencia** 
+(update here)
+Next Step:
+
+**Roman Iles**
+(update here)
+Next Step:
+
+**Trey Tolleson** 
+(update here)
+Next step:
 
 ## Setup
 
