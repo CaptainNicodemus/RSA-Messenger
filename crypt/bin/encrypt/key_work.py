@@ -1,5 +1,7 @@
 import pickle
 import os
+import string
+
 import rsa
 import time
 from asyncore import loop
@@ -54,8 +56,7 @@ def ask_4_which_keys():
 
 def loadkeys(folderLocation):
     # give folder with key's (pub.dat) & (priv.dat) retuns values
-
-    user_name = folderLocation
+    user_name = folderLocation.rsplit('/',1)[1]
     pub = pickle.load(open(f"{folderLocation}/pub.dat", "rb"))
     priv = pickle.load(open(f"{folderLocation}/priv.dat", "rb"))
 
