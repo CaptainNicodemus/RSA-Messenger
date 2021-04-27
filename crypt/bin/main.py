@@ -1,4 +1,4 @@
-import bin.encrypt.key_work as kw
+import encrypt.key_work as kw
 import encrypt.soical as soi
 
 if __name__ == "__main__":
