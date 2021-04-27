@@ -1,5 +1,6 @@
 
 
+
 ![Vulcans](./Readme%20images/Logo_White.png)
 # RSA Messenger - Read me
 
@@ -129,8 +130,8 @@ Next Step:
 Next Step:
 
 **Trey Tolleson** 
-(update here)
-Next step:
+Helped create,implement and test the database and link the application to the database.This python file provides functions to give and recieve information to the databse.Most work and commits took place inside of [database_interface.py](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/crypt/bin/database_interface/db_interface.py)
+Next step: Help create and implement GUI and assure quality of database functionality
 
 ## Setup
 
