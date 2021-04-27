@@ -1,12 +1,12 @@
-from bin.encrypt.key_work import *
-from bin.encrypt.soical import *
+import bin.encrypt.key_work as kw
+import encrypt.soical as soi
 
 if __name__ == "__main__":
   main()
 #bootup
 #run_rsa_algo_primes()
 #load or make key
-local_pub,local_priv,my_userName = loadingKeys()
+local_pub,local_priv,my_userName = kw.loadingKeys()
 
 #loading friends public keys
 friends_key_table = [0, 0]
@@ -17,7 +17,7 @@ friends_key_table = [0, 0]
 #de-code messages
 
 def main():
-  while loop:
+  while True:
 
     action = input("\nWhat would you like to do?\n"
                    "\n1 - send message"
@@ -28,13 +28,13 @@ def main():
                    "\n:")
 
     if action == '1':
-        send_msg(local_pub)
+        soi.send_msg(local_pub)
 
     elif action == '2':
         print("lets try again")
 
     elif action == '3':
-        local_pub,local_priv,my_userName = loadingKeys()
+        local_pub,local_priv,my_userName = kw.loadingKeys()
 
     elif action == '4':
         print("\n*WARNING SHARING PRIVATE KEYS ARE A SECURITY RISK*")

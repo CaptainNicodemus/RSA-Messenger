@@ -1,7 +1,7 @@
 import pickle
 from tkinter.filedialog import askdirectory
-from bin.encrypt.encrypt import *
-from bin.database_interface.db_interface import *
+import encrypt.encrypt
+import database_interface.db_interface as dbi
 
 
 def send_msg(local_pub):
@@ -14,11 +14,11 @@ def send_msg(local_pub):
     message = input("What is the message? :")
 
     print("encrypting")
-    encrypted_messageR = encryptmsg(receiver_pubKey, message)
-    encrypted_messageS = encryptmsg(local_pub, message)
+    encrypted_messageR = encrypt.encryptmsg(receiver_pubKey, message)
+    encrypted_messageS = encrypt.encryptmsg(local_pub, message)
     print("sending")
 
-    send_message(local_pub, encrypted_messageR, encrypted_messageS, receiver_pubKey)
+    dbi.send_message(local_pub, encrypted_messageR, encrypted_messageS, receiver_pubKey)
     print("done")
     return
 
