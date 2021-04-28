@@ -123,8 +123,8 @@ main.py now has a cmd interface with a menu, soical.py can now send messages and
 Next Step: Fix integration issuses across platforms, link gui
 
 **Mandi Renae Palencia** 
-(update here)
-Next Step:
+I separated the GUI application so that we could keep the principles we learned in class. You can now find the files in crypt/bin/gui. We are now using api calls instead of networking programming.
+Next Step: Adding the functionality that we coded for this sprint into the GUI. 
 
 **Roman Iles**
 Sped up prime number generation. Established workflow of the application's interactions with the database and the network. Worked on implementing the interface for the application with the database - commands now exist to pull a table of user messages that are always encrypted and made available to the user. [enter link description here](https://bitbucket.org/cs3398s21vulcans/uss-enterprise/src/master/crypt/bin/database_interface/db_interface.py)
