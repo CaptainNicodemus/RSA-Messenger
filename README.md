@@ -3,16 +3,13 @@
 
 
 ![Vulcans](./docs/Logo_White.png)
-# RSA Messenger - Read me
+# RSA Messenger v0.5
 
-## test
 ## Table of contents
 
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Features](#features)
-
-
 * [Updates](#updates)
 * [Setup](#setup)
 * [Status](#status)
@@ -22,15 +19,15 @@
 ## General info
 Team Members: Nicodemus Robles, Trey Tolleson, Mandi Renae Palencia, Roman Iles
 
-2. What you’re creating?
+1. What you’re creating?
 
 * Team Vulcan is creating a custom RSA Encryption Messenger as a simple solution for secure private messaging accessible for everyone.
 
-3. Who you’re doing it for, your audience (may be same as the previous question)?
+2. Who you’re doing it for, your audience (may be same as the previous question)?
 
 * We are hopping that business and people trying to communicate  securely via the internet could use our system  
 
-4. Why you’re doing this, the impact or change you hope to make?
+3. Why you’re doing this, the impact or change you hope to make?
 
 * A lot of people don't understand how to encrypt their data, with this tool, we are trying to make it easy and secure
 
