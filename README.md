@@ -2,7 +2,7 @@
 
 
 
-![Vulcans](./Readme%20images/Logo_White.png)
+![Vulcans](./docs/Logo_White.png)
 # RSA Messenger - Read me
 
 ## Table of contents
